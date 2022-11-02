@@ -20,7 +20,7 @@ Posted on 02/11/2022
 
 2. 下载安装好Fork后打开File > Open Repository， 如图所示；
 
-   ![img1](docs\img\img1.png)
+   ![img1](./docs/img/img1.png)
 
 3. 选择刚刚下载的项目文件夹根目录，点击“选择文件夹”；
 
