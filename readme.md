@@ -34,7 +34,7 @@ Posted on 02/11/2022
 
 5. 至于具体怎么修改项目，你可以用Pycharm，也可以用VS Code，哪个顺手用哪个。如有问题，随时群里联系:)
 
-## Part III: Kind Note From CS4487 TA
+## Part III: Kind Note From CS4487 TA (in a more friendly version)
 
 Dear CS4487er,
 
@@ -85,3 +85,7 @@ Should you have any questions, feel free to contact our TA team.
 Regards,
 
 CS4487 TA Team
+
+## Part IV: Project Requirements
+
+参见文件夹`docs`中的那个课件（单独拎出来了）
