@@ -1,4 +1,40 @@
-# Note
+# CS4487-Project
+
+## Part I: Greeting
+
+(In Chinese)
+
+Hello，队友们，这里就是我们组的秘密基地。之后的一个月我们的项目就从这里读取。
+
+Posted on 02/11/2022
+
+## Part II: Preparations
+
+为了更好的沟通项目，鉴于各位有可能不会熟练地使用git命令，我们采用非常方便的Fork进行项目的同步。
+
+下载地址：https://git-fork.com/
+
+使用方式：
+
+1. 首先右上角绿色Code按钮 > zip下载本项目到你的电脑上某个位置（比如桌面），解压；
+
+2. 下载安装好Fork后打开File > Open Repository， 如图所示；
+
+   ![img1](docs\img\img1.png)
+
+3. 选择刚刚下载的项目文件夹根目录，点击“选择文件夹”；
+
+4. 之后可以使用fetch/push/pull命令更新项目；
+
+   讲解：
+
+   1. fetch用于获取远程（remote）端的最新情况，即其他队友最新更新的情况；
+   2. pull用于将远程更新覆盖掉你本地的文件（请确定你的本地文件已妥善保存或已经push了！！）；
+   3. push用于将你自己修改后的文件同步于整个项目，但是注意，如果你的上传与其他人的上传冲突，可能表示你没有基于最新的代码进行修改。所以上传前请保证你使用的是最新的代码，并在pull后与你的修改兼容。
+
+5. 至于具体怎么修改项目，你可以用Pycharm，也可以用VS Code，哪个顺手用哪个。如有问题，随时群里联系:)
+
+## Part III: Kind Note From CS4487 TA
 
 Dear CS4487er,
 
