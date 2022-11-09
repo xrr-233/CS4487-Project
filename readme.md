@@ -32,7 +32,8 @@ Posted on 02/11/2022
    2. pull用于将远程更新覆盖掉你本地的文件（请确定你的本地文件已妥善保存或已经push了！！）；
    3. push用于将你自己修改后的文件同步于整个项目，但是注意，如果你的上传与其他人的上传冲突，可能表示你没有基于最新的代码进行修改。所以上传前请保证你使用的是最新的代码，并在pull后与你的修改兼容。
 
-5. 至于具体怎么修改项目，你可以用Pycharm，也可以用VS Code，哪个顺手用哪个。如有问题，随时群里联系:)
+5. 至于具体怎么修改项目，你可以用Pycharm，也可以用VS Code，哪个顺手用哪个。如有问题，随时群里联系；
+6. 项目环境安装`conda env create -f environment.yaml`
 
 ## Part III: Kind Note From CS4487 TA (in a more friendly version)
 
@@ -68,7 +69,7 @@ def test(model, data_path):
 
 4. Some useful resources to get started can be found at 
 
-   https://github.com/HongguLiu/Deepfake-Detection
+   https://github.com/HongguLiu/Deepfake-Detection [只有这个有用]
 
    https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
 

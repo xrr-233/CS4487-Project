@@ -1,7 +1,0 @@
-torch
-jupyter
-numpy
-pillow
-tqdm
-tensorflow
-tensorflow-gpu
