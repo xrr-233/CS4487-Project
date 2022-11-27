@@ -104,11 +104,19 @@ CS4487 TA Team
 
    接着，创建conda环境（用pycharm可以不用打命令行）；
 
-   然后，安装requirements：`pip install -r requirements.txt`；
+   然后，先安装pytorch：
+
+   ```
+   pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
+   ```
+
+   再安装requirements：
+
+   `pip install -r requirements.txt`
 
    对于Ubuntu环境，运行`bash customized.sh`即可；
 
-   对于Windows，一个办法是将`python train.py`命令复制至terminal命令行，然后把参数改成数字或字符串形式（但是训练依然训不了，可以看看mode除了binary以外还有什么参数可以改）。
+   对于Windows，现在也已经可以用git bash运行。
 
 2. 文件结构
 
