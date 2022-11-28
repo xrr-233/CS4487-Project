@@ -20,3 +20,4 @@ CNNDetection/LICENSE.txt
 CNNDetection/train.py
 CNNDetection/util.py
 CNNDetection/validate.py
+CNNDetection/dataset
