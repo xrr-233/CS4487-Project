@@ -10,7 +10,7 @@
            continue_train: False                         
                  cropSize: 224                           
                  data_aug: False                         
-                 dataroot: ../dataset                    	[default: ./dataset/]
+                 dataroot: ./dataset                     	[default: ./dataset/]
           earlystop_epoch: 5                             
                     epoch: latest                        
               epoch_count: 1                             
