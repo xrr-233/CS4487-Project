@@ -34,6 +34,8 @@ Posted on 02/11/2022
 
 5. 至于具体怎么修改项目，你可以用Pycharm，也可以用VS Code，哪个顺手用哪个。如有问题，随时群里联系；
 
+6. 数据下载链接：https://drive.google.com/file/d/1vTLN-sbwU-SjdvvodZYVeZG9oMGzE-Mh/view?usp=sharing
+
 ## Part III: Kind Note From CS4487 TA (in a more friendly version)
 
 Dear CS4487er,
@@ -130,7 +132,7 @@ CS4487 TA Team
 
 后续工作需要对源代码进行改写，使之成为.ipynb格式。现在的pth文件可以尝试给TA进行第一次测试。
 
-Reference:
+## Reference
 
 [1] https://blog.csdn.net/qq_41154003/article/details/113764079
 

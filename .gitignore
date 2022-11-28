@@ -4,6 +4,9 @@ checkpoints/cs4487_proj/train
 checkpoints/cs4487_proj/val
 checkpoints/cs4487_proj/*.pth
 CNNDetection/data_deepfake
+data
+dataset
+data.zip
 docs
 CNNDetection/data
 CNNDetection/examples
@@ -21,3 +24,6 @@ CNNDetection/train.py
 CNNDetection/util.py
 CNNDetection/validate.py
 CNNDetection/dataset
+test.txt
+train.txt
+val.txt
