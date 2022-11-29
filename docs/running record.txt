@@ -1,0 +1,169 @@
+xrr@DESKTOP-PH00596 MINGW64 /d/城大/课程/Year 4 Sem A/CS4487/Project/CNNDetection (master)
+$ bash customized.sh
+----------------- Options ---------------
+                     arch: res50
+               batch_size: 32                                   [default: 64]
+                    beta1: 0.9
+                blur_prob: 0
+                 blur_sig: 0.5
+          checkpoints_dir: ./checkpoints
+                class_bal: False
+                  classes:
+           continue_train: False
+                 cropSize: 224
+                 data_aug: False
+                 dataroot: ../dataset                           [default: ./dataset/]
+          earlystop_epoch: 5
+                    epoch: latest
+              epoch_count: 1
+                  gpu_ids: 0
+                init_gain: 0.02
+                init_type: kaiming                              [default: normal]
+                  isTrain: True                                 [default: None]
+               jpg_method: cv2
+                 jpg_prob: 0
+                 jpg_qual: 75
+               last_epoch: -1
+                 loadSize: 256
+                loss_freq: 400
+                       lr: 0.0001
+                     mode: binary
+                     name: cs4487_proj                          [default: experiment_name]
+                new_optim: False
+                    niter: 100                                  [default: 10000]
+                  no_flip: False
+              num_threads: 0                                    [default: 4]
+                    optim: adam
+           resize_or_crop: scale_and_crop
+                rz_interp: bilinear
+          save_epoch_freq: 20
+         save_latest_freq: 2000
+           serial_batches: False
+                   suffix:
+              train_split: train
+                val_split: val
+----------------- End -------------------
+#training images = 300
+  0%|                                                                                                                                                          | 0/100 [00:00<?, ?it/s]s
+aving the model at the end of epoch 0, iters 300
+(Val @ epoch 0) acc: 0.8766666666666667; ap: 0.9745500537753353
+Validation accuracy increased (-inf --> 0.876667).  Saving model ...
+  1%|█▍                                                                                                                                             | 1/100 [03:16<5:23:36, 196.13s/it]T
+rain loss: 0.3139369487762451 at step: 400
+(Val @ epoch 1) acc: 0.8916666666666667; ap: 0.9829310889186103
+Validation accuracy increased (0.876667 --> 0.891667).  Saving model ...
+  2%|██▊                                                                                                                                            | 2/100 [06:30<5:18:19, 194.89s/it]T
+rain loss: 0.1222461611032486 at step: 800
+(Val @ epoch 2) acc: 0.8841666666666667; ap: 0.9848150607941674
+EarlyStopping counter: 1 out of 5
+  3%|████▎                                                                                                                                          | 3/100 [10:00<5:26:24, 201.91s/it]T
+rain loss: 0.28318870067596436 at step: 1200
+(Val @ epoch 3) acc: 0.945; ap: 0.9933340801336981
+Validation accuracy increased (0.891667 --> 0.945000).  Saving model ...
+  4%|█████▋                                                                                                                                         | 4/100 [13:37<5:32:41, 207.93s/it](
+Val @ epoch 4) acc: 0.9416666666666667; ap: 0.9945649510588983
+EarlyStopping counter: 1 out of 5
+  5%|███████▏                                                                                                                                       | 5/100 [17:15<5:35:06, 211.64s/it]T
+rain loss: 0.034843817353248596 at step: 1600
+(Val @ epoch 5) acc: 0.9316666666666666; ap: 0.9918989770047996
+EarlyStopping counter: 2 out of 5
+  6%|████████▌                                                                                                                                      | 6/100 [20:54<5:35:23, 214.08s/it]T
+rain loss: 0.17144715785980225 at step: 2000
+saving the latest model cs4487_proj (epoch 6, model.total_steps 2000)
+(Val @ epoch 6) acc: 0.9491666666666667; ap: 0.9942921984751457
+Validation accuracy increased (0.945000 --> 0.949167).  Saving model ...
+  7%|██████████                                                                                                                                     | 7/100 [24:30<5:32:50, 214.74s/it]T
+rain loss: 0.12071866542100906 at step: 2400
+(Val @ epoch 7) acc: 0.9491666666666667; ap: 0.9949136915224017
+EarlyStopping counter: 1 out of 5
+  8%|███████████▍                                                                                                                                   | 8/100 [28:04<5:28:42, 214.37s/it](
+Val @ epoch 8) acc: 0.9291666666666667; ap: 0.9907752526238516
+EarlyStopping counter: 2 out of 5
+  9%|████████████▊                                                                                                                                  | 9/100 [32:12<5:41:13, 224.98s/it]T
+rain loss: 0.14500856399536133 at step: 2800
+(Val @ epoch 9) acc: 0.9391666666666667; ap: 0.9935175738260448
+EarlyStopping counter: 3 out of 5
+ 10%|██████████████▏                                                                                                                               | 10/100 [35:57<5:37:12, 224.81s/it]T
+rain loss: 0.08642210066318512 at step: 3200
+(Val @ epoch 10) acc: 0.9466666666666667; ap: 0.9952285738698509
+EarlyStopping counter: 4 out of 5
+ 11%|███████████████▌                                                                                                                              | 11/100 [39:36<5:30:51, 223.05s/it]T
+rain loss: 0.02953951060771942 at step: 3600
+(Val @ epoch 11) acc: 0.9158333333333334; ap: 0.9907924721776257
+EarlyStopping counter: 5 out of 5
+Learning rate dropped by 10, continue training...
+ 12%|█████████████████                                                                                                                             | 12/100 [43:14<5:24:58, 221.58s/it](
+Val @ epoch 12) acc: 0.9716666666666667; ap: 0.998287589223568
+Validation accuracy increased (-inf --> 0.971667).  Saving model ...
+ 13%|██████████████████▍                                                                                                                           | 13/100 [46:59<5:23:05, 222.82s/it]T
+rain loss: 0.01626492664217949 at step: 4000
+saving the latest model cs4487_proj (epoch 13, model.total_steps 4000)
+(Val @ epoch 13) acc: 0.9725; ap: 0.9981938123527138
+EarlyStopping counter: 1 out of 5
+ 14%|███████████████████▉                                                                                                                          | 14/100 [50:44<5:20:13, 223.41s/it]T
+rain loss: 0.0014943184796720743 at step: 4400
+(Val @ epoch 14) acc: 0.9758333333333333; ap: 0.998487616228772
+Validation accuracy increased (0.971667 --> 0.975833).  Saving model ...
+ 15%|█████████████████████▎                                                                                                                        | 15/100 [54:28<5:16:29, 223.40s/it]T
+rain loss: 0.009167774580419064 at step: 4800
+(Val @ epoch 15) acc: 0.9733333333333334; ap: 0.998495513431489
+EarlyStopping counter: 1 out of 5
+ 16%|██████████████████████▋                                                                                                                       | 16/100 [58:09<5:11:52, 222.77s/it](
+Val @ epoch 16) acc: 0.9758333333333333; ap: 0.9984841539020396
+EarlyStopping counter: 2 out of 5
+ 17%|███████████████████████▊                                                                                                                    | 17/100 [1:01:50<5:07:18, 222.15s/it]T
+rain loss: 0.001450177514925599 at step: 5200
+(Val @ epoch 17) acc: 0.9766666666666667; ap: 0.9983528231821356
+EarlyStopping counter: 3 out of 5
+ 18%|█████████████████████████▏                                                                                                                  | 18/100 [1:05:27<5:01:36, 220.69s/it]T
+rain loss: 0.00311919953674078 at step: 5600
+(Val @ epoch 18) acc: 0.9775; ap: 0.9983097726570344
+EarlyStopping counter: 4 out of 5
+ 19%|██████████████████████████▌                                                                                                                 | 19/100 [1:09:01<4:55:24, 218.82s/it]T
+rain loss: 0.0007807540241628885 at step: 6000
+saving the latest model cs4487_proj (epoch 19, model.total_steps 6000)
+(Val @ epoch 19) acc: 0.9758333333333333; ap: 0.9983731631222649
+EarlyStopping counter: 5 out of 5
+Learning rate dropped by 10, continue training...
+ 20%|████████████████████████████                                                                                                                | 20/100 [1:12:36<4:49:55, 217.44s/it]s
+aving the model at the end of epoch 20, iters 6300
+(Val @ epoch 20) acc: 0.9766666666666667; ap: 0.9984443320053605
+Validation accuracy increased (-inf --> 0.976667).  Saving model ...
+ 21%|█████████████████████████████▍                                                                                                              | 21/100 [1:16:10<4:45:05, 216.53s/it]T
+rain loss: 0.02278844267129898 at step: 6400
+(Val @ epoch 21) acc: 0.9758333333333333; ap: 0.9985368505270977
+EarlyStopping counter: 1 out of 5
+ 22%|██████████████████████████████▊                                                                                                             | 22/100 [1:19:45<4:40:59, 216.14s/it]T
+rain loss: 0.0005577246192842722 at step: 6800
+(Val @ epoch 22) acc: 0.9758333333333333; ap: 0.9985279508877879
+EarlyStopping counter: 2 out of 5
+ 23%|████████████████████████████████▏                                                                                                           | 23/100 [1:23:25<4:38:49, 217.27s/it]T
+rain loss: 0.005078508984297514 at step: 7200
+(Val @ epoch 23) acc: 0.9783333333333334; ap: 0.9985932678327911
+EarlyStopping counter: 3 out of 5
+ 24%|█████████████████████████████████▌                                                                                                          | 24/100 [1:27:03<4:35:28, 217.48s/it](
+Val @ epoch 24) acc: 0.9791666666666666; ap: 0.9986359354889731
+Validation accuracy increased (0.976667 --> 0.979167).  Saving model ...
+ 25%|███████████████████████████████████                                                                                                         | 25/100 [1:30:40<4:31:36, 217.29s/it]T
+rain loss: 0.025944268330931664 at step: 7600
+(Val @ epoch 25) acc: 0.9791666666666666; ap: 0.998682561153313
+EarlyStopping counter: 1 out of 5
+ 26%|████████████████████████████████████▍                                                                                                       | 26/100 [1:34:14<4:26:43, 216.26s/it]T
+rain loss: 0.004130130168050528 at step: 8000
+saving the latest model cs4487_proj (epoch 26, model.total_steps 8000)
+(Val @ epoch 26) acc: 0.9783333333333334; ap: 0.9986112578593859
+EarlyStopping counter: 2 out of 5
+ 27%|█████████████████████████████████████▊                                                                                                      | 27/100 [1:37:49<4:22:53, 216.08s/it]T
+rain loss: 0.0025751010980457067 at step: 8400
+(Val @ epoch 27) acc: 0.9791666666666666; ap: 0.9986760169652624
+EarlyStopping counter: 3 out of 5
+ 28%|███████████████████████████████████████▏                                                                                                    | 28/100 [1:41:25<4:19:00, 215.85s/it](
+Val @ epoch 28) acc: 0.9791666666666666; ap: 0.998639428670071
+EarlyStopping counter: 4 out of 5
+ 29%|████████████████████████████████████████▌
+         | 29/100 [1:44:59<4:14:51, 215.38s/it]Train loss: 0.04906786233186722 at step: 8800
+(Val @ epoch 29) acc: 0.9791666666666666; ap: 0.9986594080992625
+EarlyStopping counter: 5 out of 5
+Early stopping.
+ 29%|████████████████████████████████████████▌
+         | 29/100 [1:48:34<4:25:49, 224.64s/it]
