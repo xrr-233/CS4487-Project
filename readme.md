@@ -1,5 +1,10 @@
 # CS4487-Project
 
+## Part O: For TA
+All explanations are in the .ipynb file. The readme file is only for our group communication. You can directly take actions based on only the instructions in .ipynb file.
+
+(But for environment configuration, you can take a look if needed.)
+
 ## Part I: Greeting
 
 (In Chinese)
@@ -70,7 +75,7 @@ def test(model, data_path):
 
 4. Some useful resources to get started can be found at 
 
-   https://github.com/HongguLiu/Deepfake-Detection [只有这个有用]
+   https://github.com/HongguLiu/Deepfake-Detection
 
    https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
 
@@ -94,43 +99,47 @@ CS4487 TA Team
 
 ## Part V: Solution
 
-通过这几天的验证我们已经找到了解法。我们采用了 https://github.com/peterwang512/CNNDetection 提供的模型，在理解代码的基础上修改了部分参数，并以我们的数据集进行训练，达到了99.05%的Accuracy。
+通过这几天的验证我们已经找到了解法。我们采用了 https://github.com/peterwang512/CNNDetection 提供的模型，在理解代码的基础上修改了部分参数，并以我们的数据集进行训练，达到了97.08%的Test Accuracy。
 
 要点：
 
 1. 如何运行？
 
-   本项目代码貌似只支持用Ubuntu训练，用windows训练会报错，猜想是由于mode参数设为了binary所致。
+   首先，在本项目文件夹
+   ```
+   git clone https://github.com/PeterWang512/CNNDetection.git
+   ```
 
-   首先，在本项目文件夹`git clone https://github.com/PeterWang512/CNNDetection.git`；
+   接着，创建conda环境（用pycharm可以不用打命令行）
+   ```
+   conda create -n CS4487-Proj python=3.10
+   ```
 
-   接着，创建conda环境（用pycharm可以不用打命令行）；
-
-   然后，先安装pytorch：
-
+   然后，先安装[PyTorch](https://pytorch.org/get-started/locally/) (Windows OS for example)
    ```
    pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
    ```
 
    再安装requirements：
-
-   `pip install -r requirements.txt`
+   ```
+   pip install -r requirements.txt
+   ```
 
    对于Ubuntu环境，运行`bash customized.sh`即可；
 
    对于Windows，现在也已经可以用git bash运行。
 
-2. 文件结构
+3. 文件结构
 
-   训练路径在`./dataset`。可以看到其中结构正好符合TA的提示。我们按照8:1:1的比例划分训练集、验证集和测试集。此处感谢@ironQHZ（可以将划分的代码也push上来）。
+   训练路径在`./dataset`。可以看到其中结构正好符合TA的提示。我们按照8:1:1的比例划分训练集、验证集和测试集。此处感谢@ironQHZ。
 
-3. 训练好后，储存网络状态的`.pth`文件会生成于`./checkpoints/cs4487_proj`中。由于文件太大，我们以微信形式发送该文件。请自行将该文件复制进该路径，只有进行该操作后才可以进行测试。
+4. 训练好后，储存网络状态的`.pth`文件会生成于`./checkpoints/cs4487_proj`中。
 
-4. 测试
+5. 测试
 
    代码也在`customized.sh`中，不过被屏蔽了，可以解屏蔽之后运行。更多细节请参阅 https://github.com/peterwang512/CNNDetection 的readme。
 
-后续工作需要对源代码进行改写，使之成为.ipynb格式。现在的pth文件可以尝试给TA进行第一次测试。
+   注：所谓的`customized.sh`是用作原代码测试的，不是.ipynb的测试。
 
 ## Reference
 
