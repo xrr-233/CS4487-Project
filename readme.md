@@ -13,6 +13,12 @@ Hello，队友们，这里就是我们组的秘密基地。之后的一个月我
 
 Posted on 02/11/2022
 
+补档：数据集链接（节省本地磁盘空间）
+
+https://drive.google.com/file/d/1vTLN-sbwU-SjdvvodZYVeZG9oMGzE-Mh/view
+
+Posted on 09/04/2023
+
 ## Part II: Preparations
 
 为了更好的沟通项目，鉴于各位有可能不会熟练地使用git命令，我们采用非常方便的Fork进行项目的同步。
